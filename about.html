@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CyberPay - About</title>
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/style.css" />
+  <style>
+    .intro img {
+      max-width: 75%;
+    }
+
+    form.simple-form {
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: white;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form.simple-form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    form.simple-form input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form.simple-form input[type="submit"] {
+      margin-top: 1rem;
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form.simple-form input[type="submit"]:hover {
+      background-color: #003060;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="CyberPay Logo" class="logo">
+    <img src="images/logo.png" alt="CyberPay Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -21,9 +65,9 @@
   <section class="intro">
     <h2>Why Choose Cybersecurity?</h2>
     <p>Cybersecurity professionals protect critical systems and data. The industry is growing with strong salaries and remote work flexibility.</p>
-    <img src="images/salary_chart.jpg" alt="Bar chart showing average salaries in cybersecurity roles">
+    <img src="images/salary_chart.jpg" alt="Cybersecurity Salary Chart" />
     <p>Required skills include system administration, security tools, and certifications like CompTIA Security+, CISSP, or CEH.</p>
-    <img src="images/workfromhome.jpg" alt="Cybersecurity professional working remotely from home setup">
+    <img src="images/workfromhome.jpg" alt="Cybersecurity remote work setup" />
   </section>
 
   <main class="content-grid">
@@ -32,6 +76,17 @@
     <article class="box">Work Remotely<br>Anywhere in the World</article>
     <article class="box">Growth Field<br>+30% in 5 Years</article>
   </main>
+
+  <form class="simple-form" action="#" method="post">
+    <h3>Get in Touch</h3>
+    <label for="fullname">Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <input type="submit" value="Submit">
+  </form>
 
   <footer>
     <p>&copy; 2025 CyberPay</p>
