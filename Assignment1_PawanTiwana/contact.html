@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberPay - Contact</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="CyberPay Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active">Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Contact CyberPay</h2>
+    <p>Ask questions about careers in cybersecurity or provide your feedback.</p>
+    <img src="images/analyst.jpg" alt="Cybersecurity support representative ready to help">
+  </section>
+
+  <main>
+    <form action="mailto:someone@example.com" method="post">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <fieldset>
+        <legend>Contact Preference</legend>
+        <label><input type="radio" name="contact" value="email"> Email</label>
+        <label><input type="radio" name="contact" value="phone"> Phone</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Interests</legend>
+        <label><input type="checkbox" name="analyst" value="analyst"> Analyst</label>
+        <label><input type="checkbox" name="tester" value="tester"> Pen Tester</label>
+        <label><input type="checkbox" name="engineer" value="engineer"> Engineer</label>
+      </fieldset>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date">
+
+      <input type="reset" value="Clear">
+      <input type="submit" value="Send">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CyberPay</p>
+  </footer>
+</body>
+</html>
